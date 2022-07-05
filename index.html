@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+    <script
+      src="https://kit.fontawesome.com/cdc95c0ab5.js"
+      crossorigin="anonymous"
+    ></script>
+    <title>Calculator</title>
+  </head>
+  <body>
+    <div class="calculator">
+      <div id="displaybox">
+        <input type="text" name="arithmetic" placeholder="input" />
+        <output></output>
+      </div>
+      <div id="clear" class="buttons">clear</div>
+      <div id="leftbracket" class="buttons">(</div>
+      <div id="rightbracket" class="buttons">)</div>
+      <div id="one" data-key="49" class="buttons"><kbd>1</kbd></div>
+      <div id="two" data-key="50" class="buttons"><kbd>2</kbd></div>
+      <div id="three" data-key="51" class="buttons"><kbd>3</kbd></div>
+      <div id="four" data-key="52" class="buttons"><kbd>4</kbd></div>
+      <div id="five" data-key="53" class="buttons"><kbd>5</kbd></div>
+      <div id="six" data-key="54" class="buttons"><kbd>6</kbd></div>
+      <div id="seven" data-key="55" class="buttons"><kbd>7</kbd></div>
+      <div id="eight" data-key="56" class="buttons"><kbd>8</kbd></div>
+      <div id="nine" data-key="57" class="buttons"><kbd>9</kbd></div>
+      <div id="zero" data-key="0" class="buttons"><kbd>0</kbd></div>
+      <div id="divide" class="buttons"><i class="fa-solid fa-divide"></i></div>
+      <div id="multiply" class="buttons"><i class="fa-solid fa-xmark"></i></div>
+      <div id="subtract" class="buttons"><i class="fa-solid fa-minus"></i></div>
+      <div id="decimal" data-key='190' class="buttons"><kbd>.</kbd></div>
+      <div id="add" class="buttons"><i class="fa-solid fa-plus"></i></div>
+      <div id="equals" class="buttons"><i class="fa-solid fa-equals"></i></div>
+    </div>
+
+    <script src="calculator.js"></script>
+  </body>
+</html>

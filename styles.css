@@ -1,0 +1,120 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;700&display=swap");
+body {
+  box-sizing: border-box;
+  background-color: cornsilk;
+  margin: 20px auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "Poppins", sans-serif;
+}
+.calculator {
+  max-height: 100vh;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(5, 1fr);
+  gap: 5px;
+  border: solid black;
+  padding: 20px;
+  background-color: darkkhaki;
+  box-shadow: 5px 3px 3px 5px;
+  border-radius: 10px;
+}
+.buttons {
+  border: solid black 1.5px;
+  border-radius: 5px;
+  min-width: 80px;
+  height: 80px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: large;
+  cursor: pointer;
+  background-color: darkcyan;
+  color: white;
+  font-weight: bold;
+}
+.buttons:hover {
+  transform: scale(1.02);
+  transition: ease-in-out 0.35s;
+}
+#displaybox {
+  border: solid black 2px;
+  border-radius: 5px;
+  grid-column: 1/5;
+  cursor: text;
+  background-color: whitesmoke;
+  position: relative;
+  background-color: #313131;
+  color: antiquewhite;
+  display: flex;
+  justify-content: space-between;
+  align-items: stretch;
+}
+output {
+  /* border: solid black; */
+  min-width: 110px;
+  cursor: default;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: bold;
+  font-size: larger;
+}
+input {
+  min-width: 220px;
+  background-color: #313131;
+  font-size: larger;
+  color: antiquewhite;
+  font-weight: bold;
+  border: none;
+  padding-left: 8px;
+}
+#one,
+#two,
+#three {
+  grid-row: 5/6;
+}
+#four,
+#five,
+#six {
+  grid-row: 4/5;
+}
+#zero {
+  grid-row: 6/7;
+  grid-column: 1/2;
+}
+#equals {
+  background-color: #11ce11;
+  color: white;
+  grid-column: 3/5;
+  grid-row: 6/7;
+}
+#decimal {
+  font-size: xx-large;
+  font-weight: bolder;
+  grid-row: 6/7;
+  grid-column: 2/3;
+}
+#divide {
+  grid-row: 2/3;
+  grid-column: 4/5;
+}
+#clear {
+  background-color: red;
+  color: whitesmoke;
+}
+#divide,
+#multiply,
+#subtract,
+#add {
+  background-color: gainsboro;
+  color: black;
+}
+#divide:hover,
+#multiply:hover,
+#subtract:hover,
+#add:hover {
+  background-color: gray;
+  color: white;
+}
