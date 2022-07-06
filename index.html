@@ -15,28 +15,41 @@
     <div class="calculator">
       <div id="displaybox">
         <input type="text" name="arithmetic" placeholder="input" />
-        <output></output>
+        <output>0</output>
       </div>
-      <div id="clear" class="buttons">clear</div>
-      <div id="leftbracket" class="buttons">(</div>
-      <div id="rightbracket" class="buttons">)</div>
-      <div id="one" data-key="49" class="buttons"><kbd>1</kbd></div>
-      <div id="two" data-key="50" class="buttons"><kbd>2</kbd></div>
-      <div id="three" data-key="51" class="buttons"><kbd>3</kbd></div>
-      <div id="four" data-key="52" class="buttons"><kbd>4</kbd></div>
-      <div id="five" data-key="53" class="buttons"><kbd>5</kbd></div>
-      <div id="six" data-key="54" class="buttons"><kbd>6</kbd></div>
-      <div id="seven" data-key="55" class="buttons"><kbd>7</kbd></div>
-      <div id="eight" data-key="56" class="buttons"><kbd>8</kbd></div>
-      <div id="nine" data-key="57" class="buttons"><kbd>9</kbd></div>
-      <div id="zero" data-key="0" class="buttons"><kbd>0</kbd></div>
-      <div id="divide" class="buttons"><i class="fa-solid fa-divide"></i></div>
-      <div id="multiply" class="buttons"><i class="fa-solid fa-xmark"></i></div>
-      <div id="subtract" class="buttons"><i class="fa-solid fa-minus"></i></div>
-      <div id="decimal" data-key='190' class="buttons"><kbd>.</kbd></div>
-      <div id="add" class="buttons"><i class="fa-solid fa-plus"></i></div>
-      <div id="equals" class="buttons"><i class="fa-solid fa-equals"></i></div>
+      <div id="clear" class="buttons" disabled="true">
+        <button>clear</button>
+      </div>
+      <div id="leftbracket" class="buttons"><button>(</button></div>
+      <div id="rightbracket" class="buttons"><button>)</button></div>
+      <div id="one" data-key="49" class="buttons"><button>1</button></div>
+      <div id="two" data-key="50" class="buttons"><button>2</button></div>
+      <div id="three" data-key="51" class="buttons"><button>3</button></div>
+      <div id="four" data-key="52" class="buttons"><button>4</button></div>
+      <div id="five" data-key="53" class="buttons"><button>5</button></div>
+      <div id="six" data-key="54" class="buttons"><button>6</button></div>
+      <div id="seven" data-key="55" class="buttons"><button>7</button></div>
+      <div id="eight" data-key="56" class="buttons"><button>8</button></div>
+      <div id="nine" data-key="57" class="buttons"><button>9</button></div>
+      <div id="zero" data-key="0" class="buttons"><button>0</button></div>
+      <div id="divide" class="buttons">
+        <button name="divide"><i class="fa-solid fa-divide"></i></button>
+      </div>
+      <div id="multiply" class="buttons">
+        <button name="multiply"><i class="fa-solid fa-xmark"></i></button>
+      </div>
+      <div id="subtract" class="buttons">
+        <button name="subtract"><i class="fa-solid fa-minus"></i></button>
+      </div>
+      <div id="decimal" data-key="190" class="buttons"><button>.</button></div>
+      <div id="add" class="buttons">
+        <button name="add"><i class="fa-solid fa-plus"></i></button>
+      </div>
+      <div id="equals" class="buttons">
+        <button name="equals"><i class="fa-solid fa-equals"></i></button>
+      </div>
     </div>
+    <footer>Created by: Martin D. Mithi</footer>
 
     <script src="calculator.js"></script>
   </body>
